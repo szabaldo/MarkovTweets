@@ -5,18 +5,22 @@
  *      Author: sam
  */
 
-#include <fstream>
-
 #ifndef TEXTANALYZER_HPP_
 #define TEXTANALYZER_HPP_
 
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+
 class TextAnalyzer {
+
+	fstream* file_in_stream;
+
 public:
-	void parse_text();
-
-private:
-
-}
+	TextAnalyzer();
+	void parse_text(string file);
+};
 
 
 

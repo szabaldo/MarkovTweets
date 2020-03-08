@@ -4,18 +4,18 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/Main.cpp \
 ../src/MarkovChain.cpp \
-../src/MarkovTweets.cpp \
 ../src/TextAnalyzer.cpp 
 
 OBJS += \
+./src/Main.o \
 ./src/MarkovChain.o \
-./src/MarkovTweets.o \
 ./src/TextAnalyzer.o 
 
 CPP_DEPS += \
+./src/Main.d \
 ./src/MarkovChain.d \
-./src/MarkovTweets.d \
 ./src/TextAnalyzer.d 
 
 

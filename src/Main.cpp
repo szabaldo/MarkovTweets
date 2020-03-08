@@ -7,9 +7,12 @@
 //============================================================================
 
 #include <iostream>
+#include "TextAnalyzer.hpp"
 using namespace std;
 
 int main() {
+	TextAnalyzer text_analyzer;
+	text_analyzer.parse_text("test_doc.txt");
 
 
 	return 0;
