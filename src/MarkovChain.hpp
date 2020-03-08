@@ -11,20 +11,21 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <vector>
 
 using namespace std;
 
 class MarkovChain {
-
 	fstream* key_stream;
 	fstream* value_stream;
-	map<string, string>* markov_map;
-
+	map<string, vector<string>>* markov_map;
+	vector<string>* key_vec;
 public:
 	MarkovChain();
-	void parse_text(string file);
+	void parseText(string file);
+	string generateTweet();
 private:
-	void print_map();
+	void printMap();
 };
 
 

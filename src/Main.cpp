@@ -13,7 +13,8 @@ using namespace std;
 
 int main() {
 	MarkovChain markov_chain;
-	markov_chain.parse_text("test_doc.txt");
+	markov_chain.parseText("test_doc.txt");
+	markov_chain.generateTweet();
 
 	return 0;
 }
