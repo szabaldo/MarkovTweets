@@ -1,3 +1,3 @@
-src/Main.o: ../src/Main.cpp ../src/TextAnalyzer.hpp
+src/Main.o: ../src/Main.cpp ../src/MarkovChain.hpp
 
-../src/TextAnalyzer.hpp:
+../src/MarkovChain.hpp:

@@ -5,18 +5,15 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/Main.cpp \
-../src/MarkovChain.cpp \
-../src/TextAnalyzer.cpp 
+../src/MarkovChain.cpp 
 
 OBJS += \
 ./src/Main.o \
-./src/MarkovChain.o \
-./src/TextAnalyzer.o 
+./src/MarkovChain.o 
 
 CPP_DEPS += \
 ./src/Main.d \
-./src/MarkovChain.d \
-./src/TextAnalyzer.d 
+./src/MarkovChain.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
