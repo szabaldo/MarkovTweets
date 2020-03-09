@@ -7,16 +7,21 @@
 //============================================================================
 
 #include <iostream>
-
 #include "MarkovChain.hpp"
+
 using namespace std;
 
 int main() {
+	// seed random number generator
 	srand(time(NULL));
-	MarkovChain markov_chain;
+
+	// prompt and recieve file path for source text
 	cout << "enter file path for source text: ";
 	string file;
 	cin >> file;
+
+	// analyzer source text and generate tweet
+	MarkovChain markov_chain;
 	markov_chain.parseText(file);
 	markov_chain.generateTweet();
 
