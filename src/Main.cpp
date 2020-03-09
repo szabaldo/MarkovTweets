@@ -12,8 +12,12 @@
 using namespace std;
 
 int main() {
+	srand(time(NULL));
 	MarkovChain markov_chain;
-	markov_chain.parseText("test_doc.txt");
+	cout << "enter file path for source text: ";
+	string file;
+	cin >> file;
+	markov_chain.parseText(file);
 	markov_chain.generateTweet();
 
 	return 0;

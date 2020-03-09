@@ -22,6 +22,7 @@ class MarkovChain {
 	vector<string>* key_vec;
 public:
 	MarkovChain();
+	~MarkovChain();
 	void parseText(string file);
 	string generateTweet();
 private:
